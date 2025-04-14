@@ -6,7 +6,7 @@
     <title>Unity Web Player | Cantigas</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1200 height=675 tabindex="-1" style="width: 1200px; height: 675px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=1200 height=675 tabindex="-1" style="width: 1200px; height: 675px; background: #808080"></canvas>
     <script src="Build/Cantigas.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Cantigas.data.unityweb",
-        frameworkUrl: "Build/Cantigas.framework.js.unityweb",
-        codeUrl: "Build/Cantigas.wasm.unityweb",
+        dataUrl: "Build/Cantigas.data",
+        frameworkUrl: "Build/Cantigas.framework.js",
+        codeUrl: "Build/Cantigas.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ClickIdeia",
         productName: "Cantigas",
